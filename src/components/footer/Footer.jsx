@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="footer-brand-text">
               <span className="footer-title">TEGAR PRAMUDYA PRATAMA</span>
               <span className="footer-sub">
-                Computerized System Validation (CSV) & Full-Stack Web Developer
+                Software & Data Engineer | Enterprise Solution Analyst | Computerized System Validation (CSV)
               </span>
             </div>
           </div>
