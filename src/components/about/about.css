@@ -1,92 +1,162 @@
-.about__container{
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  column-gap: 4rem;
+.about__grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 3.5rem;
+  align-items: flex-start;
 }
 
-.about__img{
-  width: 250px;
-  border-radius: 1.5rem;
-  justify-self: center;
+.about__media {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.about__info{
-  grid-template-columns: repeat(3, 140px);
-  gap: 0.5rem;
-  margin-bottom: var(--mb-2);
+.about__image-frame {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-alt);
 }
 
-.about__box{
-  background-color: var(--container-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  text-align: center;
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__snapshot-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.about__snapshot-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.75rem;
+}
+
+.about__snapshot-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.about__snapshot-label {
+  font-size: var(--caption);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.about__snapshot-value {
+  font-size: var(--body-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Narrative */
+.about__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__subtitle {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.015em;
+}
+
+.about__text {
+  font-size: var(--body-base);
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.about__text strong {
+  color: var(--text-primary);
+}
+
+/* Pillars */
+.about__pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.75rem 0 2rem;
+}
+
+.about__pillar-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
   padding: 1rem 1.25rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
 }
 
-.about__icon{
-  font-size: 1.5rem;
-  color: var(--title-color);
-  margin-bottom: var(--mb-0-5);
+.about__pillar-card:hover {
+  border-color: var(--accent-border);
+  background-color: var(--accent-light);
 }
 
-.about__title{
-  font-size: var(--small-font-size);
-  font-weight: var(--font-medium);
+.about__pillar-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background-color: var(--accent-light);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
 }
 
-.about__subtitle{
-  font-size: var(--tiny-font-size);
+.about__pillar-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
 
-.about__description{
-  padding: 0 4rem 0 0;
-  margin-bottom: var(--mb-2-5);
+.about__pillar-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For large devices */
+.about__pillar-desc {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.about__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 @media screen and (max-width: 992px) {
-  .about__container{
+  .about__grid {
     grid-template-columns: 1fr;
-    row-gap: 2.5rem;
+    gap: 2.5rem;
   }
 
-  .about__img{
-    width: 220px;
-  }
-
-  .about__box{
-    padding: 0.75rem 0.5rem;
-  }
-
-  .about__data{
-    text-align: center;
-  }
-
-  .about__info{
-    justify-content:center;
-  }
-
-  .about__description{
-    padding: 0 5rem;
-    margin-bottom: 2rem;
-  }
-}
-
-/* For medium devices */
-@media screen and (max-width: 576px) {
-  .about__info{
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .about__description{
-    padding: 0;
-  }
-}
-
-/* For small devices */
-@media screen and (max-width: 350px) {
-  .about__info{
-    grid-template-columns: repeat(2, 1fr);
+  .about__image-frame {
+    max-width: 480px;
   }
 }

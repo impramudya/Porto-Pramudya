@@ -1,50 +1,40 @@
-import React, { useEffect, useState } from "react";
-import { projectsData } from "./Data";
-import { projectsNav } from "./Data";
+import React, { useState, useMemo } from "react";
+import { projectsData, projectsNav } from "./Data";
 import WorkItems from "./WorkItems";
 
 const Works = () => {
-    const [item, setItem] = useState({name: "all"});
-    const[projects, setProjects] = useState ([]);
-    const[active, setActive] = useState(0);
+  const [activeFilter, setActiveFilter] = useState("all");
 
-    useEffect(() => {
-        if(item.name === "all"){
-            setProjects(projectsData);
-        }
+  const filteredProjects = useMemo(() => {
+    if (activeFilter === "all") {
+      return projectsData;
+    }
+    return projectsData.filter((project) => project.category === activeFilter);
+  }, [activeFilter]);
 
-        else {
-            const newProjects = projectsData.filter((projects) => {
-                return projects.category.toLowerCase() === item.name;
-            });
-
-            setProjects(newProjects);
-        }
-    }, [item]);
-
-    const handleClick = (e, index) => {
-        setItem({name: e.target.textContent.toLowerCase()});
-        setActive(index);
-    };
   return (
-    <div>
+    <div className="work__wrapper">
+      {/* Filter Tabs */}
       <div className="work__filters">
-        {projectsNav.map((item, index) => {
-          return (
-            <span onClick={(e) => {
-                handleClick(e, index);
-            }} 
-            className={`${active === index ? 'active-work' : ''} work__item`} key={index}>
-              {item.name}
-            </span>
-          );
-        })}
+        {projectsNav.map((nav) => (
+          <button
+            key={nav.filter}
+            type="button"
+            className={`work__filter-btn ${
+              activeFilter === nav.filter ? "work__filter-btn--active" : ""
+            }`}
+            onClick={() => setActiveFilter(nav.filter)}
+          >
+            {nav.name}
+          </button>
+        ))}
       </div>
 
-      <div className="work__container container grid">
-        {projects.map((item) => {
-            return <WorkItems item={item} key={item.id}/>
-        })}
+      {/* Projects Grid */}
+      <div className="work__grid">
+        {filteredProjects.map((item) => (
+          <WorkItems key={item.id} item={item} />
+        ))}
       </div>
     </div>
   );

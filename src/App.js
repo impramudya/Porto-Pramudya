@@ -2,32 +2,31 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
-import Services from "./components/services/Services";
-import Qualification from "./components/qualification/Qualification";
+import Experience from "./components/experience/Experience";
 import Work from "./components/work/Work";
+import Skills from "./components/skills/Skills";
+import Education from "./components/education/Education";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-import ScrollUp from "./components/scrollup/ScrollUp";
 
 const App = () => {
-  return(
+  return (
     <>
-    <Header/>
+      <Header />
 
-    <main className="main">
-      <Home/>
-      <About/>
-      <Services/>
-      <Qualification/>
-      <Work/>
-      <Contact/>
+      <main className="main">
+        <Home />
+        <About />
+        <Experience />
+        <Work />
+        <Skills />
+        <Education />
+        <Contact />
+      </main>
 
-    </main>
-    
-    <Footer/>
-    <ScrollUp/>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
 export default App;
