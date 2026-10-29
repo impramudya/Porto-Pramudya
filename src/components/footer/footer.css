@@ -122,6 +122,10 @@
   gap: 16px;
 }
 
+.footer-copyright {
+  line-height: 1.6;
+}
+
 .footer-back-to-top {
   display: inline-flex;
   align-items: center;

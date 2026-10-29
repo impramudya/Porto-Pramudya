@@ -40,6 +40,15 @@ const Footer = () => {
               <i className="uil uil-github"></i>
             </a>
             <a
+              href="https://www.instagram.com/impramudya/"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-social-btn"
+              title="Instagram"
+            >
+              <i className="uil uil-instagram"></i>
+            </a>
+            <a
               href="https://www.linkedin.com/in/tegarpramudya/"
               target="_blank"
               rel="noreferrer"
@@ -69,7 +78,8 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <span className="footer-copyright">
-            © {new Date().getFullYear()} Tegar Pramudya Pratama. All rights reserved.
+            Last Updated : October, 2026 <br />
+            {new Date().getFullYear()} &#169; made with love - by Tegar Pramudya Pratama
           </span>
 
           <button
