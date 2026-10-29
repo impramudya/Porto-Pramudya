@@ -32,15 +32,9 @@ const About = () => {
           <div className="about-profile-info">
             <div className="about-profile-name-row">
               <h3 className="about-profile-name">TEGAR PRAMUDYA PRATAMA</h3>
-              <span className="about-verified-badge" title="Verified Professional">
-                <i className="uil uil-check-circle"></i> Verified
-              </span>
             </div>
             <p className="about-profile-sub">
               Computerized System Validation Staff @ PT. Saka Farma Laboratories (Kalbe Consumer Health)
-            </p>
-            <p className="about-profile-edu">
-              B.S. Informatics, Universitas Singaperbangsa Karawang (GPA 3.79 / 4.00 • Latin Honors)
             </p>
           </div>
         </div>
@@ -57,8 +51,8 @@ const About = () => {
             <span className="about-stat-label">Production & Core Projects</span>
           </div>
           <div className="about-stat-box">
-            <span className="about-stat-num">3.79</span>
-            <span className="about-stat-label">Informatics GPA (Honors)</span>
+            <span className="about-stat-num">3+</span>
+            <span className="about-stat-label">Enterprise Engagements</span>
           </div>
           <div className="about-stat-box">
             <span className="about-stat-num">1+</span>

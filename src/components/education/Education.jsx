@@ -6,7 +6,7 @@ const awardsData = [
     title: "Latin Honors Graduate (Cum Laude Distinction)",
     org: "Universitas Singaperbangsa Karawang (UNSIKA)",
     year: "2025",
-    desc: "Graduated with a GPA of 3.79 / 4.00 in Informatics, reflecting rigorous computer science coursework, software analysis, and academic distinction.",
+    desc: "Graduated with Latin Honors distinction in Informatics, reflecting rigorous computer science coursework, software analysis, and academic distinction.",
     badge: "Honors Distinction",
     icon: "uil-graduation-cap",
   },
