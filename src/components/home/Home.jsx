@@ -60,7 +60,7 @@ const Home = () => {
         <div className="hero-floating-card">
           <h1 className="hero-floating-title">Tegar Pramudya Pratama</h1>
           <p className="hero-floating-desc">
-            Software & Data Engineer | Computerized System Validation (CSV) | Enterprise Solution Analyst
+            Software & Data Engineer - Computerized System Validation (CSV)
           </p>
           <div className="hero-floating-actions">
             <a href="#work" className="btn-richard">
