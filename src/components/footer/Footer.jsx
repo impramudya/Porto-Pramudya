@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-brand-box">
-            <div className="footer-logo">T</div>
+            <div className="footer-logo">;</div>
             <div className="footer-brand-text">
               <span className="footer-title">TEGAR PRAMUDYA PRATAMA</span>
               <span className="footer-sub">

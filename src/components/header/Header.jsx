@@ -43,8 +43,8 @@ const Header = () => {
       {/* Brand & Mobile Header */}
       <div className="nav-mobile-header">
         <a href="#hero" className="nav-left">
-          <div className="nav-logo">T</div>
-          <div className="nav-brand">TEGAR</div>
+          <div className="nav-logo">;</div>
+          <div className="nav-brand">PRAMUDYA</div>
         </a>
 
         <div className="nav-mobile-controls">

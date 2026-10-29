@@ -42,8 +42,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Great Vibes', cursive;
-  font-size: 22px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+  padding-bottom: 2px;
 }
 
 .footer-brand-text {
