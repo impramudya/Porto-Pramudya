@@ -20,60 +20,63 @@ const Home = () => {
       <div className="bg-name-marquee bg-name-marquee--t1" aria-hidden="true">
         <div className="bg-name-track bg-name-track--reverse">
           <span className="bg-name-text bg-name-text--faint">COMPUTERIZED SYSTEM VALIDATION</span>
-          <span className="bg-name-text bg-name-text--faint">FULLSTACK WEB DEVELOPER</span>
+          <span className="bg-name-text bg-name-text--faint">SOFTWARE & DATA ENGINEER</span>
           <span className="bg-name-text bg-name-text--faint">COMPUTERIZED SYSTEM VALIDATION</span>
-          <span className="bg-name-text bg-name-text--faint">FULLSTACK WEB DEVELOPER</span>
+          <span className="bg-name-text bg-name-text--faint">SOFTWARE & DATA ENGINEER</span>
         </div>
       </div>
 
       <div className="bg-name-marquee bg-name-marquee--b1" aria-hidden="true">
         <div className="bg-name-track">
-          <span className="bg-name-text bg-name-text--faint">QA COMPLIANCE • DATA INTEGRITY</span>
+          <span className="bg-name-text bg-name-text--faint">ENTERPRISE SOLUTION ANALYST</span>
           <span className="bg-name-text bg-name-text--faint">LARAVEL • REACT • SQL • GAMP</span>
-          <span className="bg-name-text bg-name-text--faint">QA COMPLIANCE • DATA INTEGRITY</span>
+          <span className="bg-name-text bg-name-text--faint">ENTERPRISE SOLUTION ANALYST</span>
           <span className="bg-name-text bg-name-text--faint">LARAVEL • REACT • SQL • GAMP</span>
         </div>
       </div>
 
-      {/* Concentric Radar Rings */}
+      {/* Concentric Radar Wave Rings */}
       <div className="concentric-circles">
         <div className="circle circle-1"></div>
         <div className="circle circle-2"></div>
         <div className="circle circle-3"></div>
       </div>
 
-      {/* Profile Image Wrap */}
-      <div className="profile-wrap">
-        <div className="profile-container">
-          <img
-            src={ProfileImg}
-            alt="Tegar Pramudya Pratama"
-            className="profile-image"
-            draggable="false"
-          />
+      {/* Hero Main Content (Flex: Photo Left & Text Right) */}
+      <div className="hero-main-content">
+        {/* Profile Image Wrap with Organic Wave Animation */}
+        <div className="profile-wrap">
+          <div className="profile-container">
+            <img
+              src={ProfileImg}
+              alt="Tegar Pramudya Pratama"
+              className="profile-image"
+              draggable="false"
+            />
+          </div>
         </div>
-      </div>
 
-      {/* Hero Headline Overlay Card */}
-      <div className="hero-floating-card">
-        <h1 className="hero-floating-title">Tegar Pramudya Pratama</h1>
-        <p className="hero-floating-desc">
-          Software & Data Engineer | Computerized System Validation (CSV) | Enterprise Solution Analyst
-        </p>
-        <div className="hero-floating-actions">
-          <a href="#work" className="btn-richard">
-            <span>Explore Work</span>
-            <i className="uil uil-arrow-down"></i>
-          </a>
-          <a
-            href={CV}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-richard-outline"
-          >
-            <i className="uil uil-file-alt"></i>
-            <span>Resume</span>
-          </a>
+        {/* Hero Headline Overlay Card */}
+        <div className="hero-floating-card">
+          <h1 className="hero-floating-title">Tegar Pramudya Pratama</h1>
+          <p className="hero-floating-desc">
+            Software & Data Engineer | Computerized System Validation (CSV) | Enterprise Solution Analyst
+          </p>
+          <div className="hero-floating-actions">
+            <a href="#work" className="btn-richard">
+              <span>Explore Work</span>
+              <i className="uil uil-arrow-down"></i>
+            </a>
+            <a
+              href={CV}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-richard-outline"
+            >
+              <i className="uil uil-file-alt"></i>
+              <span>Resume</span>
+            </a>
+          </div>
         </div>
       </div>
 
