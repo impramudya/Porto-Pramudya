@@ -1,12 +1,16 @@
+/* ==========================================================================
+   EXPERIENCE - STRUCTURED MONOCHROME LIST & TIMELINE
+   ========================================================================== */
+
 .experience__list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.75rem;
 }
 
 .experience__item {
   display: grid;
-  grid-template-columns: 24px 1fr;
+  grid-template-columns: 20px 1fr;
   gap: 1.5rem;
   position: relative;
 }
@@ -20,8 +24,8 @@
 }
 
 .experience__dot {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: var(--surface);
   border: 2px solid var(--text-muted);
@@ -30,9 +34,8 @@
 }
 
 .experience__dot--active {
-  background-color: var(--accent);
-  border-color: var(--accent);
-  box-shadow: 0 0 0 4px var(--accent-light);
+  background-color: #111111;
+  border-color: #111111;
 }
 
 .experience__line {
@@ -50,6 +53,14 @@
 
 .experience__card {
   padding: 1.75rem 2rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.experience__card:hover {
+  border-color: #111111;
 }
 
 .experience__header {
@@ -58,7 +69,7 @@
   align-items: flex-start;
   gap: 1.5rem;
   margin-bottom: 1.25rem;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 1.25rem;
 }
 
@@ -76,7 +87,7 @@
 }
 
 .experience__role {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--text-primary);
   letter-spacing: -0.015em;
@@ -97,7 +108,7 @@
 }
 
 .experience__subcompany {
-  color: var(--accent);
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
@@ -106,7 +117,7 @@
 }
 
 .experience__dept {
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .experience__meta {
@@ -129,7 +140,7 @@
 
 .experience__period i,
 .experience__location i {
-  color: var(--accent);
+  color: var(--text-primary);
   font-size: 0.95rem;
 }
 
@@ -151,11 +162,11 @@
 }
 
 .experience__bullet {
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
-  background-color: var(--accent);
-  margin-top: 0.55rem;
+  background-color: #111111;
+  margin-top: 0.6rem;
   flex-shrink: 0;
 }
 
@@ -163,7 +174,7 @@
 .experience__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.45rem;
   padding-top: 0.75rem;
   border-top: 1px solid var(--border-subtle);
 }
