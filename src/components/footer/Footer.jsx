@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="footer-brand-text">
               <span className="footer-title">TEGAR PRAMUDYA PRATAMA</span>
               <span className="footer-sub">
-                Software & Data Engineer | Enterprise Solution Analyst | Computerized System Validation (CSV)
+                Software & Data Engineer | Computerized System Validation (CSV) | Enterprise Solution Analyst
               </span>
             </div>
           </div>
