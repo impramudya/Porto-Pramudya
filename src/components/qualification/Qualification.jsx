@@ -95,7 +95,22 @@ const Qualification = () => {
           </div>
 
           <div className={toggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
-          <div className="qualification__data">
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">PT. Saka Farma Laboratories (Kalbe)</h3>
+                <span className="qualification__subtitle">Computerized System Validation Staff</span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calendar-alt"></i> May 2025 - Present
+                </div>
+              </div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+
+            <div className="qualification__data">
               <div></div>
 
               <div>
@@ -105,16 +120,16 @@ const Qualification = () => {
 
               <div>
                 <h3 className="qualification__title">PERURI (BUMN)</h3>
-                <span className="qualification__subtitle">IT & DKV</span>
+                <span className="qualification__subtitle">Fullstack Web Developer</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> Apr 2024 - Present
+                  <i className="uil uil-calendar-alt"></i> Apr 2024 - Jun 2024
                 </div>
               </div>
             </div>
 
             <div className="qualification__data">
               <div>
-              <h3 className="qualification__title">PT.Inti Ganda Perdana</h3>
+                <h3 className="qualification__title">PT. Inti Ganda Perdana</h3>
                 <span className="qualification__subtitle">Web Developer</span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i> May 2023 - Nov 2023
@@ -136,7 +151,7 @@ const Qualification = () => {
               </div>
 
               <div>
-              <h3 className="qualification__title">PT. Impactbyte Teknologi Edukasi</h3>
+                <h3 className="qualification__title">PT. Impactbyte Teknologi Edukasi</h3>
                 <span className="qualification__subtitle">Web Developer</span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i> Aug 2022 - Dec 2022
