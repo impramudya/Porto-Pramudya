@@ -1,7 +1,6 @@
 import React from "react";
 
-const WorkItems = ({ item, index }) => {
-  const padIndex = String(index + 1).padStart(2, "0");
+const WorkItems = ({ item }) => {
 
   return (
     <article className="project-card">
@@ -15,11 +14,6 @@ const WorkItems = ({ item, index }) => {
       </div>
 
       <div className="project-content">
-        <div className="project-header">
-          <span className="project-num">{padIndex}</span>
-          <span className="project-category">{item.categoryLabel}</span>
-        </div>
-
         <h3 className="project-title">{item.title}</h3>
         <p className="project-desc">{item.description}</p>
 

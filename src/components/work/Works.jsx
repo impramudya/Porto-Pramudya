@@ -42,8 +42,8 @@ const Works = () => {
 
       {/* Projects Grid */}
       <div className="projects-grid">
-        {projects.map((proj, idx) => {
-          return <WorkItems item={proj} index={idx} key={proj.id} />;
+        {projects.map((proj) => {
+          return <WorkItems item={proj} key={proj.id} />;
         })}
       </div>
     </div>
