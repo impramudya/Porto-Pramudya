@@ -196,11 +196,13 @@
 }
 
 .hero-floating-desc {
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: clamp(15px, 2.2vw, 18px);
+  font-weight: 500;
+  line-height: 1.5;
   color: var(--muted);
-  margin-bottom: 24px;
-  max-width: 580px;
+  margin-bottom: 26px;
+  max-width: 620px;
+  letter-spacing: -0.01em;
 }
 
 .hero-floating-actions {

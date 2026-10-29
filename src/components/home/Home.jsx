@@ -60,10 +60,9 @@ const Home = () => {
 
       {/* Hero Headline Overlay Card */}
       <div className="hero-floating-card">
-        <div className="hero-floating-tag">Informatics Graduate • UNSIKA (GPA 3.79 / 4.00)</div>
         <h1 className="hero-floating-title">Tegar Pramudya Pratama</h1>
         <p className="hero-floating-desc">
-          Computerized System Validation (CSV) & Full-Stack Web Developer. Experienced in IQ/OQ/PQ protocols, UAT testing, URS review, and enterprise web engineering.
+          Computerized System Validation (CSV) Full-Stack Web Developer
         </p>
         <div className="hero-floating-actions">
           <a href="#work" className="btn-richard">
