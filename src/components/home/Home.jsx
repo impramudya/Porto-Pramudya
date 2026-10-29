@@ -51,10 +51,6 @@ const Home = () => {
             className="profile-image"
             draggable="false"
           />
-          <div className="profile-badge">
-            <span className="profile-badge-dot"></span>
-            <span>CSV Staff • PT. Saka Farma (Kalbe)</span>
-          </div>
         </div>
       </div>
 
