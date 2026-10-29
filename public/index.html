@@ -5,17 +5,30 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#FAFAFA" />
+    <meta name="theme-color" content="#d9dadd" />
     <meta
       name="description"
-      content="Tegar Pramudya Pratama — Portfolio. Informatics graduate specialized in Computerized System Validation (CSV), System Analysis, and Full-Stack Web Development."
+      content="Tegar Pramudya Pratama — Portfolio. Informatics graduate specialized in Computerized System Validation (CSV), Quality Assurance, and Full-Stack Web Development."
     />
 
-    <!-- Google Fonts: Inter -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Google Fonts: Inter, JetBrains Mono, Great Vibes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -23,7 +36,7 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
-    <title>Tegar Pramudya Pratama — Portfolio</title>
+    <title>TEGAR PORTFOLIO</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

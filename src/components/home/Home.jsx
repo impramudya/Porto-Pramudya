@@ -5,127 +5,88 @@ import CV from "../../assets/Tegar-CV.pdf";
 
 const Home = () => {
   return (
-    <section className="home" id="home">
-      <div className="home__container container">
-        <div className="home__layout">
-          {/* Left Column: Text & Content */}
-          <div className="home__data">
-            {/* Status Pill */}
-            <div className="home__status-badge">
-              <span className="home__status-dot"></span>
-              <span>Available for Opportunities • Karawang / Jakarta / Bekasi</span>
-            </div>
-
-            {/* Name & Headline */}
-            <h1 className="home__name">Tegar Pramudya Pratama</h1>
-            <p className="home__role">
-              Computerized System Validation (CSV) Staff & Full-Stack Developer
-            </p>
-
-            {/* Concise CV Summary */}
-            <p className="home__bio">
-              Informatics graduate specialized in system analysis, computerized system validation (CSV), and web
-              application development. Experienced in preparing IQ/OQ/PQ protocols, UAT testing, URS reviews, risk assessments,
-              and building data-driven systems using Laravel, React, and SQL.
-            </p>
-
-            {/* Primary Action Buttons */}
-            <div className="home__actions">
-              <a href="#projects" className="btn btn-primary">
-                <span>View Projects</span>
-                <i className="uil uil-arrow-down"></i>
-              </a>
-              <a
-                href={CV}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-outline"
-                title="View CV in browser"
-              >
-                <i className="uil uil-file-alt"></i>
-                <span>View CV</span>
-              </a>
-              <a
-                href={CV}
-                download="Tegar-CV.pdf"
-                className="btn btn-secondary"
-                title="Download CV"
-              >
-                <i className="uil uil-download-alt"></i>
-                <span>Download CV</span>
-              </a>
-            </div>
-
-            {/* Social & Contact Strip */}
-            <div className="home__social">
-              <span className="home__social-label">Connect:</span>
-              <a
-                href="https://www.linkedin.com/in/tegarpramudya/"
-                target="_blank"
-                rel="noreferrer"
-                className="home__social-link"
-                title="LinkedIn"
-              >
-                <i className="uil uil-linkedin"></i>
-                <span>LinkedIn</span>
-              </a>
-              <a
-                href="https://github.com/impramudya"
-                target="_blank"
-                rel="noreferrer"
-                className="home__social-link"
-                title="GitHub"
-              >
-                <i className="uil uil-github"></i>
-                <span>GitHub</span>
-              </a>
-              <a
-                href="mailto:tegarpramudyap@gmail.com"
-                className="home__social-link"
-                title="Email"
-              >
-                <i className="uil uil-envelope"></i>
-                <span>Email</span>
-              </a>
-            </div>
-          </div>
-
-          {/* Right Column: Profile Image Card */}
-          <div className="home__visual">
-            <div className="home__image-card">
-              <img
-                src={ProfileImg}
-                alt="Tegar Pramudya Pratama"
-                className="home__image"
-              />
-              <div className="home__image-badge">
-                <span className="home__image-badge-role">Current Role</span>
-                <span className="home__image-badge-company">QA CSV Staff • PT. Saka Farma</span>
-              </div>
-            </div>
-          </div>
+    <section id="hero" className="hero-root">
+      {/* Background Giant Text Marquee (Richard Miculob Signature Ticker) */}
+      <div className="bg-name-marquee">
+        <div className="bg-name-track">
+          <span className="bg-name-text">TEGAR PRAMUDYA</span>
+          <span className="bg-name-text">TEGAR PRAMUDYA</span>
+          <span className="bg-name-text">TEGAR PRAMUDYA</span>
+          <span className="bg-name-text">TEGAR PRAMUDYA</span>
         </div>
+      </div>
 
-        {/* Quick Highlights / Metrics Grid */}
-        <div className="home__metrics">
-          <div className="home__metric-item">
-            <span className="home__metric-number">May 2025 – Present</span>
-            <span className="home__metric-label">QA CSV Staff at PT. Saka Farma (Kalbe)</span>
-          </div>
-          <div className="home__metric-item">
-            <span className="home__metric-number">3.79 / 4.00</span>
-            <span className="home__metric-label">Informatics GPA • UNSIKA</span>
-          </div>
-          <div className="home__metric-item">
-            <span className="home__metric-number">6+ Systems Built</span>
-            <span className="home__metric-label">Laravel, React, PHP & SQL Applications</span>
-          </div>
-          <div className="home__metric-item">
-            <span className="home__metric-number">IQ / OQ / PQ & UAT</span>
-            <span className="home__metric-label">Validated Compliance & GDP Protocols</span>
+      {/* Additional Staggered Background Marquee Rows */}
+      <div className="bg-name-marquee bg-name-marquee--t1" aria-hidden="true">
+        <div className="bg-name-track bg-name-track--reverse">
+          <span className="bg-name-text bg-name-text--faint">COMPUTERIZED SYSTEM VALIDATION</span>
+          <span className="bg-name-text bg-name-text--faint">FULLSTACK WEB DEVELOPER</span>
+          <span className="bg-name-text bg-name-text--faint">COMPUTERIZED SYSTEM VALIDATION</span>
+          <span className="bg-name-text bg-name-text--faint">FULLSTACK WEB DEVELOPER</span>
+        </div>
+      </div>
+
+      <div className="bg-name-marquee bg-name-marquee--b1" aria-hidden="true">
+        <div className="bg-name-track">
+          <span className="bg-name-text bg-name-text--faint">QA COMPLIANCE • DATA INTEGRITY</span>
+          <span className="bg-name-text bg-name-text--faint">LARAVEL • REACT • SQL • GAMP</span>
+          <span className="bg-name-text bg-name-text--faint">QA COMPLIANCE • DATA INTEGRITY</span>
+          <span className="bg-name-text bg-name-text--faint">LARAVEL • REACT • SQL • GAMP</span>
+        </div>
+      </div>
+
+      {/* Concentric Radar Rings */}
+      <div className="concentric-circles">
+        <div className="circle circle-1"></div>
+        <div className="circle circle-2"></div>
+        <div className="circle circle-3"></div>
+      </div>
+
+      {/* Profile Image Wrap */}
+      <div className="profile-wrap">
+        <div className="profile-container">
+          <img
+            src={ProfileImg}
+            alt="Tegar Pramudya Pratama"
+            className="profile-image"
+            draggable="false"
+          />
+          <div className="profile-badge">
+            <span className="profile-badge-dot"></span>
+            <span>CSV Staff • PT. Saka Farma (Kalbe)</span>
           </div>
         </div>
       </div>
+
+      {/* Hero Headline Overlay Card */}
+      <div className="hero-floating-card">
+        <div className="hero-floating-tag">Informatics Graduate • UNSIKA (GPA 3.79 / 4.00)</div>
+        <h1 className="hero-floating-title">Tegar Pramudya Pratama</h1>
+        <p className="hero-floating-desc">
+          Computerized System Validation (CSV) & Full-Stack Web Developer. Experienced in IQ/OQ/PQ protocols, UAT testing, URS review, and enterprise web engineering.
+        </p>
+        <div className="hero-floating-actions">
+          <a href="#work" className="btn-richard">
+            <span>Explore Work</span>
+            <i className="uil uil-arrow-down"></i>
+          </a>
+          <a
+            href={CV}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-richard-outline"
+          >
+            <i className="uil uil-file-alt"></i>
+            <span>Resume</span>
+          </a>
+        </div>
+      </div>
+
+      {/* Vertical Scroll Down Indicator */}
+      <a href="#work" className="scroll-indicator" title="Scroll down to work">
+        <div className="scroll-line"></div>
+        <span className="scroll-text">Scroll Down</span>
+      </a>
     </section>
   );
 };

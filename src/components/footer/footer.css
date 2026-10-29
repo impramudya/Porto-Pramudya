@@ -1,108 +1,143 @@
 /* ==========================================================================
-   FOOTER - UNDERSTATED MONOCHROME FOOTER
+   FOOTER (RICHARD MICULOB STYLE)
    ========================================================================== */
 
-.footer {
-  background-color: var(--surface);
-  border-top: 1px solid var(--border-color);
-  padding: 3.5rem 0 2rem;
+.footer-root {
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  padding: 60px 24px 36px;
+  margin-top: 40px;
 }
 
-.footer__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid var(--border-color);
-  flex-wrap: wrap;
-}
-
-.footer__brand {
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
-  max-width: 340px;
+  gap: 36px;
 }
 
-.footer__title {
-  font-family: var(--font-heading);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  letter-spacing: -0.015em;
-}
-
-.footer__tagline {
-  font-size: var(--caption);
-  color: var(--text-secondary);
-  line-height: 1.55;
-}
-
-.footer__list {
+.footer-top {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--line);
 }
 
-.footer__link {
-  font-size: var(--body-sm);
-  color: var(--text-secondary);
-  font-weight: 500;
-  transition: var(--transition);
-}
-
-.footer__link:hover {
-  color: #111111;
-  text-decoration: underline;
-}
-
-.footer__socials {
+.footer-brand-box {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 14px;
 }
 
-.footer__social-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius-sm);
-  background-color: var(--surface-alt);
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  background: var(--text);
+  color: var(--surface);
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
-  transition: var(--transition);
+  font-family: 'Great Vibes', cursive;
+  font-size: 22px;
 }
 
-.footer__social-btn:hover {
-  background-color: #111111;
-  border-color: #111111;
-  color: #FFFFFF;
+.footer-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.footer__bottom {
+.footer-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text);
+}
+
+.footer-sub {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--text);
+}
+
+.footer-social-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-social-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.25s ease;
+}
+
+.footer-social-btn:hover {
+  background: var(--text);
+  color: var(--surface);
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.75rem;
-  font-size: var(--caption);
-  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  color: var(--muted);
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 16px;
 }
 
-.footer__back-to-top {
+.footer-back-to-top {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  color: var(--text-secondary);
-  font-weight: 500;
-  transition: var(--transition);
+  gap: 6px;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--text);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
 }
 
-.footer__back-to-top:hover {
-  color: #111111;
-  text-decoration: underline;
+.footer-back-to-top:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
 }

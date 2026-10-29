@@ -1,98 +1,85 @@
 import React from "react";
 import "./footer.css";
-import CV from "../../assets/Tegar-CV.pdf";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
-    <footer className="footer">
-      <div className="footer__container container">
-        <div className="footer__top">
-          <div className="footer__brand">
-            <span className="footer__title">Tegar Pramudya Pratama</span>
-            <p className="footer__tagline">
-              Computerized System Validation (CSV) & Full-Stack Web Development.
-            </p>
+    <footer className="footer-root">
+      <div className="footer-container">
+        <div className="footer-top">
+          <div className="footer-brand-box">
+            <div className="footer-logo">T</div>
+            <div className="footer-brand-text">
+              <span className="footer-title">TEGAR PRAMUDYA PRATAMA</span>
+              <span className="footer-sub">
+                Computerized System Validation (CSV) & Full-Stack Web Developer
+              </span>
+            </div>
           </div>
 
-          <nav className="footer__nav">
-            <ul className="footer__list">
-              <li>
-                <a href="#about" className="footer__link">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#experience" className="footer__link">
-                  Experience
-                </a>
-              </li>
-              <li>
-                <a href="#projects" className="footer__link">
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="#skills" className="footer__link">
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a href="#education" className="footer__link">
-                  Education
-                </a>
-              </li>
-              <li>
-                <a
-                  href={CV}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="footer__link"
-                >
-                  Curriculum Vitae
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div className="footer-links">
+            <a href="#work" className="footer-link">Work</a>
+            <a href="#what-i-can-do" className="footer-link">Capabilities</a>
+            <a href="#about" className="footer-link">About</a>
+            <a href="#awards" className="footer-link">Awards</a>
+            <a href="#trainings" className="footer-link">Experience</a>
+            <a href="#contact" className="footer-link">Contact</a>
+          </div>
 
-          <div className="footer__socials">
-            <a
-              href="https://www.linkedin.com/in/tegarpramudya/"
-              className="footer__social-btn"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
-            >
-              <i className="uil uil-linkedin"></i>
-            </a>
+          <div className="footer-social-strip">
             <a
               href="https://github.com/impramudya"
-              className="footer__social-btn"
               target="_blank"
               rel="noreferrer"
-              aria-label="GitHub"
+              className="footer-social-btn"
+              title="GitHub"
             >
               <i className="uil uil-github"></i>
             </a>
             <a
+              href="https://www.linkedin.com/in/tegarpramudya/"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-social-btn"
+              title="LinkedIn"
+            >
+              <i className="uil uil-linkedin"></i>
+            </a>
+            <a
               href="mailto:tegarpramudyap@gmail.com"
-              className="footer__social-btn"
-              aria-label="Email"
+              className="footer-social-btn"
+              title="Email"
             >
               <i className="uil uil-envelope"></i>
+            </a>
+            <a
+              href="https://wa.me/6289630122001"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-social-btn"
+              title="WhatsApp"
+            >
+              <i className="uil uil-whatsapp"></i>
             </a>
           </div>
         </div>
 
-        <div className="footer__bottom">
-          <span className="footer__copy">
-            © {currentYear} Tegar Pramudya Pratama. Designed with modern minimalism.
+        <div className="footer-bottom">
+          <span className="footer-copyright">
+            © {new Date().getFullYear()} Tegar Pramudya Pratama. All rights reserved.
           </span>
-          <a href="#home" className="footer__back-to-top">
-            <span>Back to top</span>
+
+          <button
+            type="button"
+            className="footer-back-to-top"
+            onClick={scrollToTop}
+          >
+            <span>Back to Top</span>
             <i className="uil uil-arrow-up"></i>
-          </a>
+          </button>
         </div>
       </div>
     </footer>

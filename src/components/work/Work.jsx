@@ -4,19 +4,27 @@ import Works from "./Works";
 
 const Work = () => {
   return (
-    <section className="work section" id="projects">
-      <div className="work__container container">
-        {/* Section Header */}
-        <div className="section__header">
-          <span className="section__badge">03. Portfolio</span>
-          <h2 className="section__title">Selected Projects</h2>
-          <p className="section__description">
-            Production, enterprise, and validated software systems developed during industrial engagements and academic projects.
+    <section id="work" className="section">
+      <div className="work-header">
+        <div>
+          <span className="section-label">Selected Work</span>
+          <h2 className="section-title">Work Gallery</h2>
+          <p className="section-desc">
+            A collection of systems, digital platforms, and computerized validation projects I've built.
           </p>
         </div>
-
-        <Works />
+        <a
+          href="https://github.com/impramudya"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-richard-outline"
+        >
+          <span>GitHub Archive</span>
+          <i className="uil uil-arrow-up-right"></i>
+        </a>
       </div>
+
+      <Works />
     </section>
   );
 };

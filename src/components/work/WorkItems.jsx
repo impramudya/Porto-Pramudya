@@ -1,47 +1,48 @@
 import React from "react";
 
-const WorkItems = ({ item }) => {
+const WorkItems = ({ item, index }) => {
+  const padIndex = String(index + 1).padStart(2, "0");
+
   return (
-    <article className="work__card card">
-      {/* Thumbnail Frame */}
-      <div className="work__thumbnail">
+    <article className="project-card">
+      <div className="project-image-wrap">
         <img
           src={item.image}
           alt={item.title}
-          className="work__img"
+          className="project-image"
           loading="lazy"
         />
-        <span className="work__category-badge">{item.categoryLabel}</span>
       </div>
 
-      {/* Content */}
-      <div className="work__body">
-        <h3 className="work__title">{item.title}</h3>
-        <p className="work__description">{item.description}</p>
+      <div className="project-content">
+        <div className="project-header">
+          <span className="project-num">{padIndex}</span>
+          <span className="project-category">{item.categoryLabel}</span>
+        </div>
+
+        <h3 className="project-title">{item.title}</h3>
+        <p className="project-desc">{item.description}</p>
 
         {/* Tech Stack Pills */}
-        <div className="work__tags">
+        <div className="project-tech">
           {item.technologies.map((tech, idx) => (
-            <span key={idx} className="tag">
+            <span key={idx} className="project-tech-item">
               {tech}
             </span>
           ))}
         </div>
 
-        {/* Footer Actions */}
-        <div className="work__footer">
-          <a
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-outline btn-sm work__link"
-            title={`View ${item.title} on GitHub`}
-          >
-            <i className="uil uil-github"></i>
-            <span>View Repository</span>
-            <i className="uil uil-arrow-up-right"></i>
-          </a>
-        </div>
+        {/* Footer Link */}
+        <a
+          href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-link"
+          title={`View ${item.title} repository`}
+        >
+          <span>View Project</span>
+          <i className="uil uil-arrow-right"></i>
+        </a>
       </div>
     </article>
   );

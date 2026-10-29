@@ -1,98 +1,167 @@
 /* ==========================================================================
-   SKILLS - RESTRAINED MONOCHROME GROUPED LISTS
+   WHAT I CAN DO (RICHARD MICULOB STYLE CAPABILITIES & BENTO)
    ========================================================================== */
 
-.skills__grid {
+.what-i-can-do-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.what-i-can-do-left {
+  position: sticky;
+  top: 120px;
+}
+
+.what-i-can-do-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.what-i-can-do-micro {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.tech-stack-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 12px;
 }
 
-.skills__card {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  transition: var(--transition);
-}
-
-.skills__card:hover {
-  border-color: #111111;
-}
-
-.skills__card-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.85rem;
-  margin-bottom: 1.25rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.skills__icon-box {
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius-sm);
-  background-color: var(--surface-alt);
-  color: #111111;
-  border: 1px solid var(--border-color);
+.tech-stack-card {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  flex-shrink: 0;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  transition: all 0.25s ease;
 }
 
-.skills__card-title-group {
+.tech-stack-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--text);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.tech-stack-icon {
+  font-size: 22px;
+  color: var(--text);
+}
+
+.tech-stack-info {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
 }
 
-.skills__card-title {
-  font-size: 1.05rem;
+.tech-stack-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.tech-stack-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+/* Right Column Bento Cards */
+.what-i-can-do-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.bento-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.1);
+  border-color: var(--text);
+}
+
+.bento-large {
+  grid-column: span 2;
+}
+
+.bento-medium {
+  grid-column: span 1;
+}
+
+.bento-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.bento-title {
+  font-size: 19px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--text);
+  margin-bottom: 10px;
   letter-spacing: -0.015em;
 }
 
-.skills__items {
+.bento-desc {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.bento-pill-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 8px;
+  margin-top: auto;
 }
 
-.skills__pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.825rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  background-color: var(--surface-alt);
-  border: 1px solid var(--border-color);
-  padding: 0.3rem 0.65rem;
-  border-radius: var(--radius-sm);
-  transition: var(--transition);
+.bento-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  padding: 6px 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
 }
 
-.skills__pill:hover {
-  background-color: #EAEAEA;
-  border-color: #111111;
-}
-
-.skills__pill-dot {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #111111;
-  flex-shrink: 0;
-}
-
-@media screen and (max-width: 868px) {
-  .skills__grid {
+@media screen and (max-width: 900px) {
+  .what-i-can-do-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .what-i-can-do-left {
+    position: static;
+  }
+
+  .what-i-can-do-right {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-large,
+  .bento-medium {
+    grid-column: span 1;
   }
 }

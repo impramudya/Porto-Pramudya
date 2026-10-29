@@ -3,133 +3,115 @@ import "./experience.css";
 
 const experiences = [
   {
-    company: "PT. Saka Farma Laboratories",
-    subCompany: "Kalbe Consumer Health",
     role: "Computerized System Validation Staff",
-    department: "Quality Assurance Department",
-    type: "Contract",
+    company: "PT. Saka Farma Laboratories (Kalbe Consumer Health)",
+    dept: "Quality Assurance Department",
     period: "May 2025 – Present",
-    location: "Bekasi, Indonesia",
+    type: "Contract",
     isCurrent: true,
     highlights: [
-      "Analyzed and reviewed User Requirement Specifications (URS) to ensure requirements were complete, clear, traceable, and aligned with business and operational needs.",
-      "Led cross-functional alignment meetings with system users, IT, and external vendors to gather and clarify requirements, map business processes, and verify system functionality.",
-      "Prepared and executed end-to-end system validation protocols and testing activities, including IQ, OQ, PQ, and UAT, as well as test scenarios, test cases, and objective evidence documentation.",
-      "Performed risk and impact assessments for computerized systems to systematically identify operational risks and establish appropriate controls and testing methodologies.",
-      "Managed User Access Request governance for computerized systems and equipment, and engineered a CSV monitoring dashboard using Looker Studio to track validation metrics and compliance reporting.",
-      "Supported computerized system lifecycle activities, including change control evaluation, periodic review, validation maintenance, system enhancements, and retirement procedures."
+      "Analyzed and reviewed User Requirement Specifications (URS) to ensure traceability, clarity, and full alignment with pharmaceutical operational needs.",
+      "Facilitated cross-functional alignment meetings between system users, IT, and external vendors to verify software functionality against business processes.",
+      "Prepared and executed end-to-end computerized system validation protocols including IQ, OQ, PQ, and User Acceptance Testing (UAT) with rigorous objective evidence.",
+      "Conducted system risk and impact assessments to systematically evaluate operational risks and establish compliant controls.",
+      "Governed User Access Requests and engineered an automated CSV monitoring dashboard using Looker Studio for validation status reporting.",
+      "Managed System Lifecycle Management (SLCM) activities including change control evaluations, periodic reviews, and system enhancements."
     ],
-    tags: ["Computerized System Validation", "URS", "IQ/OQ/PQ", "UAT", "Risk Assessment", "Looker Studio", "Data Integrity", "GMP / GDP"]
+    tags: ["CSV Validation", "URS", "IQ/OQ/PQ", "UAT", "Risk Assessment", "Looker Studio", "ALCOA+"]
   },
   {
-    company: "Percetakan Uang Republik Indonesia",
-    subCompany: "PERURI - BUMN",
     role: "Fullstack Web Developer",
-    department: "SDMO Department (HR Business Partner & Industrial Relations)",
-    type: "Internship",
+    company: "Percetakan Uang Republik Indonesia (PERURI - BUMN)",
+    dept: "SDMO Department (HR Business Partner & Industrial Relations)",
     period: "Apr 2024 – Jun 2024",
-    location: "Karawang, Indonesia",
+    type: "Internship",
     isCurrent: false,
     highlights: [
-      "Developed internal web applications for the HR Business Partner & Industrial Relations Department using the Laravel framework based on assigned business and operational requirements.",
-      "Designed and managed normalized relational database structures to support HR operational workflows, employee records, and reporting requirements.",
-      "Conducted thorough application testing, troubleshooting, maintenance, and system enhancements driven by stakeholder feedback.",
-      "Assisted HR operational activities including verification of new employee documentation and administrative coordination for employee recall activities.",
-      "Produced digital content and promotional materials for Life at PERURI, including corporate social media publications and video production."
+      "Developed internal enterprise web applications using the Laravel framework tailored to HR Business Partner & Industrial Relations requirements.",
+      "Engineered and maintained normalized relational database structures supporting employee records, disciplinary workflows, and contract tracking.",
+      "Conducted comprehensive application testing, troubleshooting, and continuous feature enhancements driven by user feedback."
     ],
-    tags: ["Laravel", "PHP", "MySQL", "Database Design", "HR Systems", "Application Testing"]
+    tags: ["Laravel", "PHP", "MySQL", "Database Architecture", "HR Systems"]
   },
   {
-    company: "PT. Inti Ganda Perdana",
-    subCompany: "Astra Otoparts Group",
     role: "Fullstack Web Developer",
-    department: "Planning Production Control (PPC) Department",
-    type: "Internship",
+    company: "PT. Inti Ganda Perdana (Astra Otoparts Group)",
+    dept: "Planning Production Control (PPC) Department",
     period: "May 2023 – Nov 2023",
-    location: "Karawang, Indonesia",
+    type: "Internship",
     isCurrent: false,
     highlights: [
-      "Engineered web-based systems for the Planning Production Control (PPC) Department, developing new applications from the ground up and expanding existing platforms with new operational features.",
-      "Developed and maintained core system functionality using Laravel, PHP Native, MySQL, and DBeaver for database queries and management.",
-      "Analyzed existing system workflows and implemented software enhancements based on direct departmental needs and plant requirements.",
-      "Conducted rigorous testing, debugging, and issue resolution across development and staging cycles.",
-      "Deployed and installed web applications directly in the active production environment and trained departmental users during initial rollout.",
-      "Utilized TortoiseSVN for source code version control and Laragon as a local development environment."
+      "Developed web-based production control and material flow tracking systems (FIFO Trolley) for the shopfloor planning environment.",
+      "Created database schemas using DBeaver and MySQL, optimizing inventory query performance and material status updates.",
+      "Collaborated closely with manufacturing supervisors and operators to identify operational bottlenecks and deploy web solutions."
     ],
-    tags: ["Laravel", "PHP Native", "MySQL", "DBeaver", "Production Control", "TortoiseSVN", "Laragon"]
+    tags: ["PHP Native", "MySQL", "DBeaver", "PPC Systems", "Bootstrap"]
+  },
+  {
+    role: "Front-End Web Development Specialization",
+    company: "Skilvul – Kampus Merdeka (MSIB)",
+    dept: "Studi Independen Bersertifikat",
+    period: "Aug 2022 – Dec 2022",
+    type: "Certified Track",
+    isCurrent: false,
+    highlights: [
+      "Completed intensive software engineering curriculum covering modern JavaScript (ES6+), React.js, responsive layouts, and REST API integration.",
+      "Collaborated in agile team sprints to build production-grade web applications, earning the Gold Award distinction."
+    ],
+    tags: ["React.js", "JavaScript", "REST APIs", "Agile Sprints", "Gold Certification"]
   }
 ];
 
 const Experience = () => {
   return (
-    <section className="experience section" id="experience">
-      <div className="experience__container container">
-        {/* Section Header */}
-        <div className="section__header">
-          <span className="section__badge">02. Career</span>
-          <h2 className="section__title">Professional Experience</h2>
-          <p className="section__description">
-            Hands-on track record across computerized system validation, enterprise application engineering, and quality assurance.
-          </p>
-        </div>
+    <section id="trainings" className="section">
+      <div className="trainings-header">
+        <span className="section-label">Growth & Experience</span>
+        <h2 className="section-title">Experience & Trainings</h2>
+        <p className="section-desc">
+          A structured timeline of industrial engagements, quality assurance roles, and software engineering milestones.
+        </p>
+      </div>
 
-        {/* Editorial Timeline List */}
-        <div className="experience__list">
-          {experiences.map((exp, index) => (
-            <div key={index} className="experience__item">
-              <div className="experience__timeline-col">
-                <span className={`experience__dot ${exp.isCurrent ? "experience__dot--active" : ""}`}></span>
-                <span className="experience__line"></span>
+      <div className="experience-list">
+        {experiences.map((exp, idx) => (
+          <div key={idx} className="experience-card">
+            <div className="experience-header">
+              <div className="experience-title-group">
+                <div className="experience-role-row">
+                  <h3 className="experience-title">{exp.role}</h3>
+                  {exp.isCurrent && (
+                    <span className="experience-badge-active">Current Role</span>
+                  )}
+                </div>
+                <div className="experience-org">{exp.company}</div>
+                <div className="experience-dept">{exp.dept}</div>
               </div>
 
-              <div className="experience__card card">
-                {/* Header Row */}
-                <div className="experience__header">
-                  <div className="experience__title-group">
-                    <div className="experience__role-row">
-                      <h3 className="experience__role">{exp.role}</h3>
-                      <span className="tag tag--accent">{exp.type}</span>
-                    </div>
-                    <div className="experience__company-row">
-                      <span className="experience__company">{exp.company}</span>
-                      <span className="experience__subcompany">({exp.subCompany})</span>
-                      <span className="experience__dot-sep">•</span>
-                      <span className="experience__dept">{exp.department}</span>
-                    </div>
-                  </div>
-
-                  <div className="experience__meta">
-                    <span className="experience__period">
-                      <i className="uil uil-calendar-alt"></i> {exp.period}
-                    </span>
-                    <span className="experience__location">
-                      <i className="uil uil-map-marker"></i> {exp.location}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Highlights List */}
-                <ul className="experience__highlights">
-                  {exp.highlights.map((item, i) => (
-                    <li key={i} className="experience__highlight-item">
-                      <span className="experience__bullet"></span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Technology Tags */}
-                <div className="experience__tags">
-                  {exp.tags.map((tag, t) => (
-                    <span key={t} className="tag">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+              <div className="experience-date-badge">
+                <i className="uil uil-calendar-alt"></i>
+                <span>{exp.period}</span>
               </div>
             </div>
-          ))}
-        </div>
+
+            <ul className="experience-bullets">
+              {exp.highlights.map((h, hIdx) => (
+                <li key={hIdx} className="experience-bullet-item">
+                  <span className="experience-bullet-point"></span>
+                  <span>{h}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="experience-tags">
+              {exp.tags.map((t, tIdx) => (
+                <span key={tIdx} className="experience-tag-pill">
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
